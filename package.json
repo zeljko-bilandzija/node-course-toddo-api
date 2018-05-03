@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha server/**/*.test.js",
+    "test": "export NODE_ENV=test || SET \"NODE_ENV=test\" && mocha server/**/*.test.js",
     "test-watch": "nodemon --exec \"npm test\"",
     "start": "node server/server"
   },
@@ -16,8 +16,10 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.3",
+    "lodash": "^4.17.10",
     "mongodb": "^3.0.7",
-    "mongoose": "^5.0.17"
+    "mongoose": "^5.0.17",
+    "npm": "^6.0.0"
   },
   "devDependencies": {
     "expect": "^1.20.2",
