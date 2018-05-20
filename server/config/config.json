@@ -1,0 +1,12 @@
+{
+    "test": {
+        "PORT": 3000,
+        "MONGODB_URI": "mongodb://cigara9393:Daniel01!@127.0.0.1:27017/TodoAppTest?authSource=admin",
+        "JWT_SECRET": "abc123"
+    },
+    "development": {
+        "PORT": 3000,
+        "MONGODB_URI": "mongodb://cigara9393:Daniel01!@127.0.0.1:27017/TodoApp?authSource=admin",
+        "JWT_SECRET": "abc123"
+    }
+}
